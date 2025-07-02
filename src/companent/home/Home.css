@@ -1,0 +1,108 @@
+.main-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #dbeafe 0%, #c7d2fe 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  margin-bottom: 32px;
+}
+.form-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.input {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 8px 16px;
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+.input:focus {
+  box-shadow: 0 0 0 2px #60a5fa;
+}
+.btn {
+  background: #3b82f6;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 8px 0;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #2563eb;
+}
+.users-list {
+  width: 100%;
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 768px) {
+  .users-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.user-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.06);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+}
+.user-card:hover {
+  transform: scale(1.05);
+}
+.user-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #1e293b;
+}
+.user-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 9999px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 2px solid #93c5fd;
+}
+.user-age {
+  color: #64748b;
+  margin-bottom: 4px;
+}
+.user-age-value {
+  font-weight: 500;
+}
+.user-status {
+  color: #64748b;
+  margin-bottom: 12px;
+}
+.btn-delete {
+  background: #ef4444;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 4px 16px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-delete:hover {
+  background: #dc2626;
+}
