@@ -33,8 +33,6 @@ const Home = () => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const body = Object.fromEntries(formData);
-
-    // ✅ isMarried ni boolean qilish
     body.isMarried = body.isMarried === "married";
     addUserMutation.mutate(body, {
       onSuccess: () => {
@@ -54,7 +52,6 @@ const Home = () => {
             <option value="single">Single</option>
             <option value="married">Married</option>
           </select>
-          {/* ✅ YANGI: image URL input */}
           <input
             name="image"
             type="text"
